@@ -1,4 +1,4 @@
-FROM Tomcat:8.0
+FROM tomcat:8.0
 
 # Required for starting application up.
 RUN apk update && apk add /bin/sh
