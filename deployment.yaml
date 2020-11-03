@@ -16,9 +16,12 @@ spec:
    spec:
      containers:
      - name: petclinic
-       image: manojd123/petclinic
+       image: manojd123/petclinicprivate
        ports:
         - containerPort: 80
+     imagePullSecrets:
+        - name: regcred
+        
 
 ---
 apiVersion: v1
