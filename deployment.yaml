@@ -23,9 +23,8 @@ spec:
      - name: petclinic
        image: manojd123/petclinicprivate
        ports:
-        - containerPort: 80
-     imagePullSecrets:
-        - name: regcred
+        - containerPort: 8080
+     
         
 
 ---
@@ -38,7 +37,7 @@ spec:
    selector:
        app: petclinic-app
    ports:
-    - port: 80
-      targetPort: 80
+    - port: 8080
+      targetPort: 8080
       nodePort: 30007
 
